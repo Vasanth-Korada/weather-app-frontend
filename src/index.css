@@ -3,4 +3,10 @@ body {
   font-family: 'Nunito Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url('../src/assets/weather_bg.jpg') repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.92;
+  height: 100vh;
+  filter: brightness(90%); 
 }

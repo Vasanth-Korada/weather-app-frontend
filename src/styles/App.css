@@ -3,8 +3,6 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  background: url('../assets/weather_bg.jpg') no-repeat center center/cover;
-  height: 100vh; 
 }
 
 .App-header {
@@ -19,4 +17,14 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.Not-found {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
