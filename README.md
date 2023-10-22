@@ -47,6 +47,10 @@ The application will start and by default run on `http://localhost:3000/`.
 
 # Screenshots
 
+![Alt text](./login.png)
+![Alt text](./weather_search.png)
+![Alt text](./search_history.png)
+
 <img src="./login.png" alt="Login Page" width="500"/>
 <img src="./weather_search.png" alt="Weather Search" width="500"/>
 <img src="./search_history.png" alt="Weather Search" width="500"/>
