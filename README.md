@@ -19,8 +19,8 @@ This React application serves as the frontend interface for accessing the Weathe
 
 1. **Clone the Repository**:
     ```bash
-    git clone [frontend-repo-link].git
-    cd [frontend-repo-folder-name]
+    git clone https://github.com/Vasanth-Korada/weather-app-frontend.git
+    cd weather-app-frontend
     ```
 
 2. **Install Dependencies**:
@@ -30,10 +30,7 @@ This React application serves as the frontend interface for accessing the Weathe
     yarn install
     ```
 
-3. **Environment Variables**: 
-    You might need to setup environment variables or configuration files based on the React project structure to connect with the backend API.
-
-4. **Run the Application**:
+3. **Run the Application**:
     ```bash
     npm start
     # or
@@ -44,6 +41,6 @@ The application will start and by default run on `http://localhost:3000/`.
 
 ## Application Structure
 
-- **API Calls**: All the backend service calls are structured and managed in the `WeatherService.js` file.
-- **Constants**: Variables like API base URL, API keys, and other constant data are managed in the `utils/constants.js`.
+- **API Calls**: All the backend service calls are structured and managed in the `services/AuthService.js` and `services/WeatherService.js` file.
+- **Constants**: Variables like API base URL, API keys, and other constant data are managed in the `/src/utils`.
 - (Mention any other significant directories or files if required)
