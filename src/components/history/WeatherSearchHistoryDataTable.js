@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import IconButton from '@mui/material/Icon';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -8,9 +8,18 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import TextField from '@mui/material/TextField';
-import {updateWeatherDataService} from "../../services/WeatherService"
+import { updateWeatherDataService } from "../../services/WeatherService";
 
 export default function WeatherSearchHistoryDataTable({ historyData, onDelete }) {
+    const handleUpdate = async (id, field, value) => {
+        try {
+            await updateWeatherDataService(id, field, value);
+            console.log(`Updated ${field} for ID ${id} successfully.`);
+        } catch (error) {
+            console.error(`Error updating ${field} for ID ${id}:`, error);
+        }
+    };
+
     return (
         <TableContainer style={{ maxHeight: '400px', overflowY: 'auto', overflow: 'scroll' }} component={Paper}>
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
@@ -24,25 +33,25 @@ export default function WeatherSearchHistoryDataTable({ historyData, onDelete })
                     </TableRow>
                 </TableHead>
                 <TableBody>
-                    {historyData.map((history, _) => (
+                    {historyData.map((history) => (
                         <TableRow key={history.id}>
                             <TableCell align="center">{history.city}</TableCell>
                             <TableCell align="center">
                                 <TextField
                                     defaultValue={history.temp}
-                                    onBlur={(e) => updateWeatherDataService(history.id, 'temp', e.target.value)}
+                                    onBlur={(e) => handleUpdate(history.id, 'temp', e.target.value)}
                                 />
                             </TableCell>
                             <TableCell align="center">
                                 <TextField
                                     defaultValue={history.lat}
-                                    onBlur={(e) => updateWeatherDataService(history.id, 'lat', e.target.value)}
+                                    onBlur={(e) => handleUpdate(history.id, 'lat', e.target.value)}
                                 />
                             </TableCell>
                             <TableCell align="center">
                                 <TextField
                                     defaultValue={history.lng}
-                                    onBlur={(e) => updateWeatherDataService(history.id, 'lng', e.target.value)}
+                                    onBlur={(e) => handleUpdate(history.id, 'lng', e.target.value)}
                                 />
                             </TableCell>
                             <TableCell align="center">

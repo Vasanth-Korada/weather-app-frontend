@@ -12,21 +12,24 @@ const Login = ({ setToken }) => {
         if (localStorage.getItem("token") !== null) {
             navigate("/weather_search")
         }
-    }, [navigate])
-
+    }, [navigate]);
 
     const handleLogin = async () => {
         if (username.trim() === "" || password.trim() === "") {
-            window.alert("Invalid username or password")
-            return
+            window.alert("Invalid username or password");
+            return;
         }
-        const response = await loginService(username, password);
-        console.log(response)
-        if (response !== undefined && response.status === 200) {
-            setToken(response.data);
-            navigate('/weather_search');
-        } else {
-            window.alert(response.data.error)
+        try {
+            const response = await loginService(username, password);
+            if (response && response.status === 200) {
+                setToken(response.data);
+                navigate('/weather_search');
+            } else {
+                window.alert(response.data.error);
+            }
+        } catch (error) {
+            console.error("Login error:", error);
+            window.alert("Error during login");
         }
     };
 
@@ -41,6 +44,8 @@ const Login = ({ setToken }) => {
                 margin="normal"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
+                style={{ backgroundColor: 'white' }}
+                variant="filled"
             />
             <TextField
                 label="Password"
@@ -49,8 +54,10 @@ const Login = ({ setToken }) => {
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
+                style={{ backgroundColor: 'white' }}
+                variant="filled"
             />
-            <Button variant="contained" color="primary" fullWidth onClick={handleLogin}>
+            <Button style={{ height: "48px", marginTop: '8px', }} variant="contained" color="primary" fullWidth onClick={handleLogin}>
                 Login
             </Button>
             <br />
@@ -59,7 +66,7 @@ const Login = ({ setToken }) => {
             }} style={{
                 display: 'block',
                 textAlign: 'center',
-                marginTop: '10px',
+                marginTop: '20px',
                 textDecoration: 'underline',
                 cursor: 'pointer',
             }}>Register</p>

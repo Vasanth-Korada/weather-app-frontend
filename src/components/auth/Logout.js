@@ -5,10 +5,18 @@ import { logoutService } from '../../services/AuthService';
 
 const Logout = () => {
     const navigate = useNavigate();
+
     const handleLogout = async () => {
-        const logoutResponse = await logoutService();
-        if (logoutResponse && logoutResponse.status === 200) {
-            navigate('/login');
+        try {
+            const logoutResponse = await logoutService();
+            if (logoutResponse && logoutResponse.status === 200) {
+                console.log('Logout successful.');
+                navigate('/login');
+            } else {
+                console.error('Logout failed. Unexpected response:', logoutResponse);
+            }
+        } catch (error) {
+            console.error('Error during logout:', error);
         }
     };
 
