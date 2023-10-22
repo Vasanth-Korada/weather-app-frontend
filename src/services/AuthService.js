@@ -18,7 +18,7 @@ export const loginService = async (username, password) => {
     }
 }
 
-export const registerService = async ({ username, password, dob }) => {
+export const registerService = async (username, password, dob) => {
     if (!username || !password || !dob) {
         console.error('Registration failed: Invalid input');
         return { error: 'All fields are required' };
