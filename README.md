@@ -1,6 +1,12 @@
 # Weather Wonder Frontend (React, MUI)
 
-This React application serves as the frontend interface for accessing the Weather Backend Service. It offers functionalities like fetching weather details, maintaining a history of weather searches, and user management features such as login, registration, and logout.
+This React application serves as the frontend interface for accessing the Weather Backend Service. It offers functionalities like fetching weather details, maintaining a history of weather searches, deleting weather records and user management features such as login, registration, and logout.
+
+[![Weather Wonder App Demo]
+(https://github.com/Vasanth-Korada/weather-app-frontend/assets/50695446/3fa166dd-16af-4fca-a220-fb06a002549a)] // Thumbnail
+(https://youtu.be/df1Wx9Bwt10 "Weather Wonder App Demo")    // Video Link
+
+
 
 ## Features
 
