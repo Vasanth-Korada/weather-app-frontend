@@ -1,4 +1,4 @@
-# Weather Wonder Frontend (React, MUI)
+<img width="1470" alt="login" src="https://github.com/Vasanth-Korada/weather-app-frontend/assets/50695446/8bd3df64-aef5-45fb-bb50-8a24b7f7f7a5"># Weather Wonder Frontend (React, MUI)
 
 This React application serves as the frontend interface for accessing the Weather Backend Service. It offers functionalities like fetching weather details, maintaining a history of weather searches, and user management features such as login, registration, and logout.
 
@@ -45,12 +45,10 @@ The application will start and by default run on `http://localhost:3000/`.
 - **Constants**: Variables like API base URL, API keys, and other constant data are managed in the `/src/utils`.
 - (Mention any other significant directories or files if required)
 
+
 # Screenshots
 
-![Alt text](./login.png)
-![Alt text](./weather_search.png)
-![Alt text](./search_history.png)
+<img width="1470" alt="login" src="https://github.com/Vasanth-Korada/weather-app-frontend/assets/50695446/2952367f-4b9c-476e-8d21-30fcb8c6021c">
+<img width="1470" alt="weather_search" src="https://github.com/Vasanth-Korada/weather-app-frontend/assets/50695446/4b0fc2cb-f8b5-4a92-8cb5-60bf12cd8745">
+<img width="1470" alt="search_history" src="https://github.com/Vasanth-Korada/weather-app-frontend/assets/50695446/3fa166dd-16af-4fca-a220-fb06a002549a">
 
-<img src="./login.png" alt="Login Page" width="500"/>
-<img src="./weather_search.png" alt="Weather Search" width="500"/>
-<img src="./search_history.png" alt="Weather Search" width="500"/>
