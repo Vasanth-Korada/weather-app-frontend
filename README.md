@@ -2,7 +2,7 @@
 
 This React application serves as the frontend interface for accessing the Weather Backend Service. It offers functionalities like fetching weather details, maintaining a history of weather searches, deleting weather records and user management features such as login, registration, and logout.
 
-[<img src="https://github.com/Vasanth-Korada/weather-app-frontend/assets/50695446/ae20365f-2933-4974-b1e6-e57a3fad8514" width="50%">](https://youtu.be/df1Wx9Bwt10 "Weather Wonder App Demo")
+[<img src="https://github.com/Vasanth-Korada/weather-app-frontend/assets/50695446/25452a4a-bd0f-461b-9563-8725e99ab7cd" width="50%">](https://youtu.be/df1Wx9Bwt10 "Weather Wonder App Demo")
 
 
 ## Features
