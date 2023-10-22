@@ -44,3 +44,9 @@ The application will start and by default run on `http://localhost:3000/`.
 - **API Calls**: All the backend service calls are structured and managed in the `services/AuthService.js` and `services/WeatherService.js` file.
 - **Constants**: Variables like API base URL, API keys, and other constant data are managed in the `/src/utils`.
 - (Mention any other significant directories or files if required)
+
+# Screenshots
+
+<img src="./login.png" alt="Login Page" width="500"/>
+<img src="./weather_search.png" alt="Weather Search" width="500"/>
+<img src="./search_history.png" alt="Weather Search" width="500"/>
