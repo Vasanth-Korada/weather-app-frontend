@@ -7,6 +7,10 @@ This React application serves as the frontend interface for accessing the Weathe
 - **User Management**: Provides registration, login, and logout capabilities.
 - **Weather Search**: Allows users to search for weather details based on city names.
 - **Weather History**: Users can view and manage their past weather search records.
+- **Update Weather**: Users can update either temperature, latitude or longitude with ease in the Weather Search History Data Table.
+- **Delete Weather**: Users can delete a particular weather record in the weather search history table.
+- **Protect Routes**: Added route protection to the Weather Search Route. Users cannot access important routes without authentication.
+- **Open Weather Map API**: Utilized OpenWeather API to fetch current weather with user-entered city name
 - **CRUD Operations**: Enables creating, reading, updating, and deleting weather records via the backend API.
 
 ## Prerequisites
