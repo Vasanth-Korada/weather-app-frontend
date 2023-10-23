@@ -3,6 +3,7 @@
 This React application serves as the frontend interface for accessing the Weather Backend Service. It offers functionalities like fetching weather details, maintaining a history of weather searches, deleting weather records and user management features such as login, registration, and logout.
 
 <img width="50%" src="https://github.com/Vasanth-Korada/weather-app-frontend/assets/50695446/d5e774fa-38f1-4b7e-9cc5-e1ff1282a228">
+<img width="50%" src="https://github.com/Vasanth-Korada/weather-app-frontend/assets/50695446/b81da453-eb96-4ca2-a0b4-04fa1a5abefd">
 
 [Weather Wonder FullStack App YouTube Demo Link](https://youtu.be/df1Wx9Bwt10)
 
@@ -12,7 +13,7 @@ This React application serves as the frontend interface for accessing the Weathe
 
 - **Weather Search**: Allows users to search for weather details based on city names.
 - **Weather History**: Users can view and manage their past weather search records.
-- **Update Weather**: Users can update either temperature, latitude or longitude with ease in the Weather Search History Data Table.
+- **Update Weather**: Users can update either temperature, latitude, or longitude with ease in the Weather Search History Data Table.
 - **Delete Weather**: Users can delete a particular weather record in the weather search history table.
 - **Protect Routes**: Added route protection to the Weather Search Route. Users cannot access important routes without authentication.
 - **Open Weather Map API**: Utilized OpenWeather API to fetch current weather with user-entered city name
